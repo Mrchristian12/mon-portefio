@@ -31,12 +31,15 @@ header h1 {
 }
 
 #presentation .photo {
-    width: 100px; /* Réduit la largeur à 100px */
-    height: 100px; /* Assure une hauteur proportionnelle */
-    border-radius: 50%; /* Conserve un effet rond */
-    margin: 10px auto; /* Centre l'image */
-    object-fit: cover; /* Ajuste l'image pour qu'elle ne déborde pas */
+    width: 120px; /* Taille ajustée de l'image */
+    height: 120px; /* Assure une hauteur proportionnelle */
+    border-radius: 50%; /* Coins légèrement arrondis pour un effet moderne */
+    margin: 15px auto; /* Centre l'image dans la section */
+    object-fit: cover; /* Adapte l'image au cadre */
+    border: 3px solid #007bff; /* Contour bleu élégant */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre légère pour un effet 3D */
 }
+
 
 /* Section compétences */
 #hobbies ul {
