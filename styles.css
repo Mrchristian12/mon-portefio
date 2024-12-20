@@ -30,13 +30,13 @@ header h1 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 #presentation .photo {
-    width: 120px; /* Taille ajustée de l'image */
-    height: 120px; /* Assure une hauteur proportionnelle */
-    border-radius: 50%; /* Coins légèrement arrondis pour un effet moderne */
+    width: 100px; /* Taille fixe pour une photo de profil */
+    height: 100px; /* Assure que l'image est carrée */
+    border-radius: 50%; /* Transforme l'image en cercle */
     margin: 15px auto; /* Centre l'image dans la section */
-    object-fit: cover; /* Adapte l'image au cadre */
+    object-fit: cover; /* Ajuste l'image dans le cadre */
     border: 3px solid #007bff; /* Contour bleu élégant */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre légère pour un effet 3D */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre subtile pour l'effet 3D */
 }
 
 
