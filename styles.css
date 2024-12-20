@@ -1,90 +1,81 @@
-/* Polices et style global */
+/* Style de base */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f9f9f9;
+    background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
+    text-align: center;
 }
 
+/* En-tête */
 header {
-    background: linear-gradient(to right, #4facfe, #00f2fe);
-    color: #fff;
-    text-align: center;
+    background-color: #007bff;
+    color: white;
     padding: 20px 0;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2.5em;
 }
 
-header nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.section {
-    padding: 40px 20px;
-    margin: 20px auto;
-    max-width: 800px;
+/* Section présentation */
+#presentation {
+    padding: 20px;
     background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    text-align: center;
-    color: #4facfe;
-    margin-bottom: 20px;
+#presentation .photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px auto;
 }
 
-.project {
-    margin: 20px 0;
+/* Section compétences */
+#hobbies ul {
+    list-style: none;
+    padding: 0;
 }
 
-form input, form textarea {
-    width: 100%;
+#hobbies li {
+    background: #007bff;
+    color: white;
     padding: 10px;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 5px;
+}
+
+/* Section réalisations */
+#projects {
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#projects .project {
     margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 5px;
 }
 
-form button {
-    background: #4facfe;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+#projects .project h3 {
+    margin-bottom: 5px;
 }
 
-form button:hover {
-    background: #00c6ff;
-}
-
+/* Pied de page */
 footer {
-    text-align: center;
-    padding: 10px 20px;
+    margin-top: 20px;
+    padding: 10px 0;
     background: #333;
-    color: #fff;
-}
-
-footer .socials a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-}
-.section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.6s ease-in-out;
-}
-
-.section.visible {
-    opacity: 1;
-    transform: translateY(0);
+    color: white;
 }
