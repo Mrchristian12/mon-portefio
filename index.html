@@ -3,47 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - K. Christian AGOYI</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Portfolio professionnel de K. Christian AGOYI">
+    <title>K. Christian AGOYI - Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* Style général */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        nav {
+            background: #333;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .banner {
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+        }
+
+        .banner h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .banner p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+
+        .banner .buttons {
+            margin-top: 20px;
+        }
+
+        .banner .buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #ff5722;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .banner .buttons a:hover {
+            background-color: #e64a19;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        #presentation {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #presentation .photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #4CAF50;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        #presentation h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        #services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .service {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .service h3 {
+            font-size: 1.5rem;
+            color: #4CAF50;
+        }
+
+        #realisations {
+            margin: 40px 0;
+        }
+
+        #realisations h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .realisation {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .realisation:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .realisation img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #4CAF50;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>K. Christian AGOYI</h1>
-        <p>Bienvenue sur ma page de présentation !</p>
+        <h1><img src="photo.jpg" alt="Logo"> Christian</h1>
     </header>
-
-    <section id="presentation">
-        <h2>À propos de moi</h2>
-        <img src="photo.jpg" alt="Photo de K. Christian AGOYI" class="photo">
-        <p>Je suis <strong>K. Christian AGOYI</strong>, passionné par les arts visuels et l'écriture. Je combine mes compétences en infographie et en littérature pour créer des contenus visuels et narratifs impactants. Actuellement freelance, j'accompagne mes clients dans leurs projets créatifs en offrant des solutions adaptées à leurs besoins. Avec une solide expérience dans le design et un intérêt croissant pour le développement web, je vise à élargir mon expertise en créant des plateformes modernes et fonctionnelles. Mon objectif est d'exploiter mes compétences artistiques et techniques pour concevoir des interfaces utilisateur attrayantes et intuitives.</p>
-    </section>
-
-    <section id="hobbies">
-        <h2>Mes compétences</h2>
-        <ul>
-            <li>Freelance</li>
-            <li>Infographiste</li>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Mes réalisations</h2>
-        <div class="project">
-            <h3>Projet 1 : Design d'une application mobile</h3>
-            <p>Création de l'interface utilisateur pour une application de gestion de tâches.</p>
+    <nav>
+        <a href="#presentation">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="banner">
+        <h2>Bienvenue sur mon portfolio</h2>
+        <p>Découvrez mes compétences et projets.</p>
+        <div class="buttons">
+            <a href="#contact">Contactez-moi</a>
+            <a href="#cv">Mon CV</a>
         </div>
-        <div class="project">
-            <h3>Projet 2 : Portfolio interactif</h3>
-            <p>Un site web moderne pour mettre en avant mes compétences et projets.</p>
-        </div>
-        <div class="project">
-            <h3>Projet 3 : Identité visuelle</h3>
-            <p>Conception de logos et supports graphiques pour une marque locale.</p>
-        </div>
-    </section>
-
+    </div>
+    <main>
+        <section id="presentation">
+            <img src="photo.jpg" alt="Photo de profil de Christian" class="photo">
+            <h2>À propos de moi</h2>
+            <p>
+                Je suis <strong>K. Christian AGOYI</strong>, passionné par les arts visuels et l'écriture, je combine mes compétences en infographie et en littérature pour créer des contenus visuels et narratifs impactants. Actuellement freelance, j'accompagne mes clients dans leurs projets créatifs en offrant des solutions adaptées à leurs besoins. Avec une solide expérience dans le design et un intérêt croissant pour le développement web, je vise à élargir mon expertise en créant des plateformes modernes et fonctionnelles. Mon objectif est d'exploiter mes compétences artistiques et techniques pour concevoir des interfaces utilisateur attrayantes et intuitives.
+            </p>
+        </section>
+        <section id="services">
+            <h2>Mes services</h2>
+            <div class="service">
+                <h3>Design graphique</h3>
+                <p>Création de visuels uniques et impactants pour vos projets.</p>
+            </div>
+            <div class="service">
+                <h3>Développement web</h3>
+                <p>Conception de sites modernes et fonctionnels adaptés à vos besoins.</p>
+            </div>
+            <div class="service">
+                <h3>Conseil en communication</h3>
+                <p>Accompagnement stratégique pour valoriser votre image.</p>
+            </div>
+        </section>
+        <section id="realisations">
+            <h2>Mes réalisations</h2>
+            <!-- Réalisations seront affichées ici -->
+        </section>
+    </main>
     <footer>
-        <p>Contactez-moi : <a href="mailto:iagoyimr@gmail.com">k.christian.agoyi@example.com</a></p>
+        <p>Contactez-moi :</p>
+        <p>Email : <a href="mailto:iagoyimr@gmail.com">iagoyimr@gmail.com</a></p>
+        <p>Téléphone : <a href="tel:+22893638932">+228 93 63 89 32</a></p>
+        <div class="social-icons">
+            <a href="https://wa.me/22893638932" target="_blank" title="WhatsApp">
+                <img src="whatsapp-icon.png" alt="WhatsApp" style="width: 24px; height: 24px;">
+            </a>
+        </div>
     </footer>
 </body>
 </html>
+        <p>© 2024 K. Christian AGOYI. Tous droits réservés.</p>
+        <div class="
+
+    
